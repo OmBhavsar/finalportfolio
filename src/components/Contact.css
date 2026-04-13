@@ -1,8 +1,8 @@
 .footer {
   padding-bottom: 2rem;
   margin-top: 4rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  background: linear-gradient(to top, rgba(5,5,5,1), rgba(5,5,5,0));
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to top, rgba(5, 5, 5, 1), rgba(5, 5, 5, 0));
 }
 
 .contact-content {
@@ -71,7 +71,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .social-btn {
@@ -94,7 +94,7 @@
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text-secondary);
   font-size: 0.9rem;
 }

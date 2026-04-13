@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { FaGithub as Github, FaLinkedin as Linkedin } from 'react-icons/fa';
+import { SiLeetcode as Leetcode } from 'react-icons/si';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -45,10 +46,13 @@ const Navbar = () => {
           <a href="https://linkedin.com/in/ombhavsar28" target="_blank" rel="noreferrer" className="social-icon">
             <Linkedin size={20} />
           </a>
+          <a href="https://leetcode.com/u/ombhavsar28" target="_blank" rel="noreferrer" className="social-icon">
+            <Leetcode size={20} />
+          </a>
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="mobile-toggle mobile-only"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
@@ -60,9 +64,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         {navLinks.map((link) => (
-          <a 
-            key={link.label} 
-            href={link.href} 
+          <a
+            key={link.label}
+            href={link.href}
             className="mobile-link"
             onClick={() => setMobileOpen(false)}
           >
@@ -72,6 +76,7 @@ const Navbar = () => {
         <div className="mobile-socials">
           <a href="https://github.com/OmSBhavsar" className="social-icon"><Github /></a>
           <a href="https://linkedin.com/in/ombhavsar28" className="social-icon"><Linkedin /></a>
+          <a href="https://leetcode.com/u/ombhavsar28" className="social-icon"><Leetcode /></a>
         </div>
       </div>
     </nav>
